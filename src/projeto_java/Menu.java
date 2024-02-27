@@ -8,8 +8,11 @@ public class Menu {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         int opcao;
+        int booleano;
 
-        while (true) {
+        booleano = 1;
+
+        while (booleano == 1) {
             System.out.println("\u001B[35m-----------------------------------------------------");
             System.out.println("\u001B[35m                                                     ");
             System.out.println("\u001B[35m                  NANDAY PANELAS                     ");
@@ -26,25 +29,36 @@ public class Menu {
             System.out.print("\u001B[34m Opção desejada: ");
 
             opcao = leia.nextInt();
-            leia.nextLine(); 
+           // leia.nextLine(); 
 
             switch (opcao) {
                 case 1:
                     System.out.println("\nVer Catálogo de Panelas\n\n");
                     // catálogo de panelas
-                    
+                    booleano = 2;
+                    System.out.println("\nDigite 1 para voltar\n\n");
+                    booleano = leia.nextInt();
                     break;
                 case 2:
-                    System.out.println("\nAdicionar Panela ao Carrinho\n\n");
+                    System.out.println("\nAdicionar Produto ao Carrinho\n\n");
                     // Aqui ela adiciona a panela que ela deseja
+                    booleano = 2;
+                    System.out.println("\nDigite 1 para voltar\n\n");
+                    booleano = leia.nextInt();
                     break;
                 case 3:
                     System.out.println("\nVisualizar Carrinho de Compras\n\n");
                     // Aqui ela verifica o carrinho de compras
+                    booleano = 2;
+                    System.out.println("\nDigite 1 para voltar\n\n");
+                    booleano = leia.nextInt();
                     break;
                 case 4:
                     System.out.println("\nFinalizar Compra\n\n");
                     // Aqui a pessoa finaliza a compra 
+                    booleano = 2;
+                    System.out.println("\nDigite 1 para voltar\n\n");
+                    booleano = leia.nextInt();
                     break;
                 case 5:
                     System.out.println("\nObrigado por escolher a NANDAY PANELAS!");
@@ -54,6 +68,9 @@ public class Menu {
                     break;
                 default:
                     System.out.println("\nOpção Inválida!\n");
+                    booleano = 2;
+                    System.out.println("\nDigite 1 para voltar\n\n");
+                    booleano = leia.nextInt();
                     break;
             }
         }
