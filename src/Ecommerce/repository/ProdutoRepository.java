@@ -1,12 +1,13 @@
 package Ecommerce.repository;
 
-public class ProdutoRepository {
-	import Ecommerce.model.modeloPanela;
-	import Ecommerce.model.modeloFrigideira;
+import Ecommerce.model.modeloPanela;
+import Ecommerce.model.modeloFrigideira;
 
-	import java.util.List;
+import java.util.List;
+
 
 	public interface ProdutoRepository {
+		
 	    List<modeloPanela> listarPanelas();
 	    List<modeloFrigideira> listarFrigideiras();
 	    modeloPanela procurarPanelaPorId(int id);
