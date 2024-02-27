@@ -2,6 +2,7 @@ package projeto_java;
 
 import java.util.Scanner;
 
+
 public class Menu {
 
     public static void main(String[] args) {
@@ -31,6 +32,7 @@ public class Menu {
                 case 1:
                     System.out.println("\nVer Catálogo de Panelas\n\n");
                     // catálogo de panelas
+                    
                     break;
                 case 2:
                     System.out.println("\nAdicionar Panela ao Carrinho\n\n");

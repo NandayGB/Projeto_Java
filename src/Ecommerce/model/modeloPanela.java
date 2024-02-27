@@ -68,3 +68,4 @@ public class modeloPanela {
         quantidade -= quantidadeComprada;
     }
 }
+

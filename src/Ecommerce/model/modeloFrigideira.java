@@ -58,6 +58,8 @@ public abstract class modeloFrigideira {
         this.quantidade = quantidade;
     }
 
+    
+    
     // Atualizar o total de item que foi solicitado
     public float calcularTotal(int quantidade) {
         return preco * quantidade;
