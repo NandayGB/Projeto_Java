@@ -16,7 +16,7 @@ public class modeloPanela {
         this.quantidade = quantidade;
     }
 
-    // Getters e setters
+    
 
     public int getId() {
         return id;
@@ -58,12 +58,12 @@ public class modeloPanela {
         this.quantidade = quantidade;
     }
 
-    // Método para calcular o total de uma determinada quantidade de panelas
+    // Atualizar o total de item que foi solicitado
     public float calcularTotal(int quantidade) {
         return preco * quantidade;
     }
 
-    // Método para atualizar a quantidade de panelas disponíveis após uma compra
+    // Atualizar a quantidade
     public void atualizarQuantidade(int quantidadeComprada) {
         quantidade -= quantidadeComprada;
     }
