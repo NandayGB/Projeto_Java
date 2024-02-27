@@ -1,6 +1,6 @@
 package Ecommerce.model;
 
-public class modeloFrigideira {
+public abstract class modeloFrigideira {
 
     private int id;
     private String nome;
@@ -66,5 +66,8 @@ public class modeloFrigideira {
     // Atualizar a quantidade
     public void atualizarQuantidade(int quantidadeComprada) {
         quantidade -= quantidadeComprada;
+        
+        
+        
     }
 }
